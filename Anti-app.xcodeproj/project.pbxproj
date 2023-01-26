@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153062D3885AC544BAB596AF /* Pods_Anti_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9262361035BBE08C3B79BD7 /* Pods_Anti_app.framework */; };
 		48C2500E29815B8300CB05BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2500D29815B8300CB05BA /* AppDelegate.swift */; };
 		48C2501029815B8300CB05BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2500F29815B8300CB05BA /* SceneDelegate.swift */; };
 		48C2501229815B8300CB05BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C2501129815B8300CB05BA /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		384BD3A72F7585B999C43E69 /* Pods-Anti-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anti-app.debug.xcconfig"; path = "Target Support Files/Pods-Anti-app/Pods-Anti-app.debug.xcconfig"; sourceTree = "<group>"; };
 		48C2500A29815B8300CB05BA /* Anti-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anti-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C2500D29815B8300CB05BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48C2500F29815B8300CB05BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,9 @@
 		48C2501629815B8400CB05BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48C2501929815B8400CB05BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48C2501B29815B8400CB05BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48C2502129815BE800CB05BA /* Anti-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Anti-app.entitlements"; sourceTree = "<group>"; };
+		C9262361035BBE08C3B79BD7 /* Pods_Anti_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anti_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC0AF7B7124B6686E68EBE3 /* Pods-Anti-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anti-app.release.xcconfig"; path = "Target Support Files/Pods-Anti-app/Pods-Anti-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153062D3885AC544BAB596AF /* Pods_Anti_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3930733BCF03670A15C57C7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9262361035BBE08C3B79BD7 /* Pods_Anti_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		48C2500129815B8300CB05BA = {
 			isa = PBXGroup;
 			children = (
 				48C2500C29815B8300CB05BA /* Anti-app */,
 				48C2500B29815B8300CB05BA /* Products */,
+				60BD7083A9E6A40E3CF0D00E /* Pods */,
+				3930733BCF03670A15C57C7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +72,7 @@
 		48C2500C29815B8300CB05BA /* Anti-app */ = {
 			isa = PBXGroup;
 			children = (
+				48C2502129815BE800CB05BA /* Anti-app.entitlements */,
 				48C2500D29815B8300CB05BA /* AppDelegate.swift */,
 				48C2500F29815B8300CB05BA /* SceneDelegate.swift */,
 				48C2501129815B8300CB05BA /* ViewController.swift */,
@@ -67,6 +84,15 @@
 			path = "Anti-app";
 			sourceTree = "<group>";
 		};
+		60BD7083A9E6A40E3CF0D00E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				384BD3A72F7585B999C43E69 /* Pods-Anti-app.debug.xcconfig */,
+				CDC0AF7B7124B6686E68EBE3 /* Pods-Anti-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +100,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48C2501E29815B8400CB05BA /* Build configuration list for PBXNativeTarget "Anti-app" */;
 			buildPhases = (
+				2AE32BF71BD4448D9A8B21A2 /* [CP] Check Pods Manifest.lock */,
 				48C2500629815B8300CB05BA /* Sources */,
 				48C2500729815B8300CB05BA /* Frameworks */,
 				48C2500829815B8300CB05BA /* Resources */,
@@ -132,6 +159,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AE32BF71BD4448D9A8B21A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Anti-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48C2500629815B8300CB05BA /* Sources */ = {
@@ -282,9 +334,11 @@
 		};
 		48C2501F29815B8400CB05BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 384BD3A72F7585B999C43E69 /* Pods-Anti-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Anti-app/Anti-app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,9 +363,11 @@
 		};
 		48C2502029815B8400CB05BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC0AF7B7124B6686E68EBE3 /* Pods-Anti-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Anti-app/Anti-app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
